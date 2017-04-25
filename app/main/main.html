@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="main.css" rel="stylesheet"/>
+		<title></title>
+		
+	</head>
+	<body hidden="">
+		
+			
+		<!--广告-->
+		<div id="download">
+			<img id="logo_img" src="/resource/app_logo.png"/>
+			<span>河软高校云</span>
+			<div id="download_img"></div>
+			<a href="#">立即下载</a>
+		</div>
+		
+		<!-- 标题栏 -->
+		<!--<div id="titlebar"><div id="back"></div><p id="title">首页</p><div id="search"></div></div>-->
+		
+		<!-- 滚动区  -->
+		<div id="panel">
+			<ul id="content">
+				<li id="home">
+					<div id="slide" hidden="true">
+						<div id="content">
+							<a id="photo" hidden="true"><img/></a>
+						</div>
+						<div id="thumb">
+							<div id="dot" hidden="true"></div>
+						</div>
+					</div>
+					<div id="live_list" hidden="true">
+						<div id="title">直播课<a href="/app/live_list/live_list.html"><span>更多></span></a></div>
+						<div id="content"></div>
+					</div>
+					<div id="teaching" hidden="true">
+						<div id="title">我的授课<a href="/app/teacher/teacher.html"><span>更多></span></a></div>
+						<div id="content"></div>
+					</div>
+					<div id="off_line_course" hidden="true">
+						<div id="title">我的必修课和选修课<a href="/app/requiredcourse/resource.html"><span>更多></span></a></div>
+						<div id="content"></div>
+					</div>
+					<div id="pay_course" hidden="true">
+						<div id="title">我的自修课<a href="/app/selfstudy/resource.html"><span>更多></span></a></div>
+						<div id="content"></div>
+					</div>
+					<div id="quality_course" hidden="true">
+						<div id="title">本校精品课程<a href="/app/resource/resource.html"><span>更多></span></a></div>
+						<div id="content"></div>
+					</div>
+					<div id="public_course" hidden="true">
+						<div id="title">公开课联盟课程<a href="/app/thisschool/school.html"><span>更多></span></a></div>
+						<div id="content"></div>
+					</div>
+				</li>
+				<li id="school">
+					<a href="/app/search/search.html"><p id="search" hidden="true">搜索</p></a>
+				</li>
+				<li id="find">
+					<a href="/app/resource/resource.html"><p id="hot">本校精品课程</p></a>
+					<a href="/app/thisschool/school.html"><p id="res">公开课联盟课程</p></a>
+					<a href="/app/live_list/live_list.html"><p id="live">直播课</p></a>
+					<p id="job">认证与就业服务</p>
+					<p id="pop">海报</p>
+					<p id="news">院系新闻</p>
+				</li>
+				<li id="my">
+					<div id="user_info" hidden="true">
+						<div id="head">
+							<img src="/resource/head.png" />
+							<p>点击登录</p>	
+						</div>
+						<div id="more_button" hidden="true"></div>
+					</div>
+					<p id="no_data" hidden>暂无内容</p>
+					<div id="course" hidden>
+						<div id="title">我的课程<a href="/app/mycourselist/resource.html"><span>更多></span></a></div>
+						<div id="content"></div>
+					</div>
+					<div id="teaching" hidden>
+						<div id="title">我的授课<a href="/app/teacher/teacher.html"><span>更多></span></a></div>
+						<div id="content"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- 菜单 -->
+		<ul id="menu" hidden="true"><li id="home">首页</li><li id="school">院系</li><li id="find">发现</li><li id="my">我</li></ul>
+		
+		<!-- 简单提示框 -->
+		<div id="tip" hidden="true"><p></p></div>
+		
+		<!-- 课程列表项 -->
+		<div id="item" hidden="true">
+			<a id="link">
+				<img id="photo" src="/resource/course_photo.jpg" />
+				<div id="item_content">
+					<p id="item_title">全国计算机等级考试C语言初级教程</p>
+					<div id="sub">
+						<p id="sub_title">讲师：张三</p>
+						<p id="hour">10课时</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+		<!-- 直播列表项 -->
+		<div id="live_item" hidden="true">
+			<a id="link">
+				<img id="live_photo" src="/resource/course_photo.jpg" />
+				<div id="live_item_content">
+					<p id="live_item_title">全国计算机等级考试C语言初级教程</p>
+					<div id="live_sub">
+						<p id="live_people">10课时</p>
+						<p id="live_sub_title">即将直播</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+		<!-- 树列表-一级项-->
+		<div id="tree" hidden="true" status="0">
+			<a id="tree_link">
+				<div id="tree_title">
+					<div id="tree_icon"></div>
+					<p id="tree_txt">软件功能系</p>
+					<div id="tree_arrow"></div>
+				</div>
+				<div id="tree_content" hidden="true"></div>
+			</a>
+		</div>
+		
+		<!-- 树列表-二级项-->
+		<div id="trunk" hidden="true" status="0">
+			<a id="trunk_link">
+				<div id="trunk_title">
+					<div id="trunk_icon"></div>
+					<p id="trunk_txt">移动开发嵌入式</p>
+					<div id="trunk_arrow"></div>
+				</div>
+				<div id="trunk_content" hidden="true"></div>
+			</a>
+		</div>
+		
+		<!-- 树列表-三级项-->
+		<a id="leaves"><p id="txt" hidden="true">安卓</p></a>
+		
+		<!-- 资源库列表项 -->
+		<div id="item_course_library" hidden="true">
+			<a id="link">
+				<img src="/resource/course_photo.jpg">
+				<p id="item_title">我是课程标题</p>
+				<p id="item_school">西安城市学院</p>
+				<p id="item_price" class="green">￥188.00</p>
+			</a>
+		</div>
+		
+		<!-- 本校精品课列表项 -->
+		<div id="item_course" hidden="true">
+			<a id="link">
+				<img src="/resource/course_photo.jpg">
+				<p id="item_title">我是课程标题</p>
+				<p id="item_content"><span id="hour">15课时</span><span id='price'>免费</span></p>
+			</a>
+		</div>
+		
+	</body>
+	<script src="/core/starry.js" main='src/main'></script>
+</html>

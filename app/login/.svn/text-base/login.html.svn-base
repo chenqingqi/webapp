@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="login.css" rel="stylesheet"/>
+		<title>登录</title>
+	</head>
+	<body hidden="true">
+		
+		<!--<div id="titlebar">
+			<div id="back"></div>
+			<p id="title">登录</p>
+		</div>-->
+		
+		<div id="username">
+			<img id="icon" src="/resource/pople.png"/>
+			<input type="text" value="请输入手机号/邮箱"/>
+			<img id="clear" src="/resource/cross.png" hidden="true"/>
+		</div>
+		
+		<div id="password">
+			<img id="icon" src="/resource/lock.png"/>
+			<input value="请输入密码"/>
+			<img id="clear" src="/resource/cross.png" hidden="true"/>
+			<img id="eye"   src="/resource/eye_open.png"/>
+		</div>
+		
+		<a href="/app/reset/reset.html"><p id="forget">忘记密码</p></a>
+		
+		<p id="loginbtn">登录</p>
+		
+		<a href="/app/register/register.html"><p id="reg">注册</p></a>
+		
+		<p id="typebtn">使用云联盟账号登录</p>
+		
+		<div id="tip" hidden="true"><p></p></div>
+	
+	</body>
+	<script src="/core/starry.js" main='login'></script>
+</html>

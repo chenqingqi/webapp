@@ -1,0 +1,93 @@
+/**
+ * 导入通用类
+ */
+@import url("/module/style.css");
+@import url("/module/clickstyle.css");
+html, body {
+    width: 640px;
+    height: 100%;
+    background-color: #F0F2F6;
+    overflow-y:hidden ;
+}
+
+/**
+ * 标题栏
+ */
+#titlebar
+{
+	width: 640px;
+	height: 80px;
+	background-color: #5BAEF5;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#titlebar #back
+{
+	display: block;
+	width : 50px;
+	height: 50px;
+	padding: 15px;
+	float: left;
+}
+
+#titlebar #button
+{
+	line-height: 80px;
+}
+
+#titlebar #back:hover
+{
+	-webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}
+
+#titlebar #title
+{
+	float: left;
+	width: 500px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	color: #FFF;
+	font-size: 32px;
+	margin-left: 50px;
+}
+#titlebar #screen {
+    float: right;
+    line-height: 88px;
+    margin-right: 20px;
+}
+#titlebar #screen span {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+}
+/*
+ * 填写建议
+ */
+#txt{
+	width: 600px;
+	text-indent: 1em;
+	margin: 80px 0 0 0;
+	line-height: 50px; 
+	color: rgb(153, 153, 153);
+	padding: 20px ;
+}
+/*
+ * 提示
+ */
+#prompt{
+	width: 440px;
+    bottom: 50px;
+    position: absolute;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgba(15, 14, 14, 0.45);
+    border-radius: 5px;
+    margin-left: 100px;
+    color: #FFFFFF;
+}
+

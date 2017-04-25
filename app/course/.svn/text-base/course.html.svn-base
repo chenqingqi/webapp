@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="course.css" rel="stylesheet"/>
+		<title>课程</title>
+	</head>
+	<body>
+		
+		<div id="scroll">
+		<!-- 播放器 -->
+		<div id="player">
+			<video controls="controls" hidden webkit-playsinline></video>
+			<img id="loading" src="/resource/video_loading.gif" hidden/>
+		</div>
+		
+		<!-- 课程简介 -->
+		<div id="intro">
+			<div id="title">课程介绍<div id="arrow"></div></div>
+			<p id="content"></p>
+		</div>
+		
+		<!-- 授课班 -->
+		<div id="classes">
+			<div id="title"><span></span><div id="arrow"></div><p id="price"></p></div>
+			<ul id="content"></ul>
+		</div>
+		
+		<!-- 选项卡 -->
+		<div id="tab">
+			<div id="chapter_btn">章节</div>
+			<div id="live_btn">直播</div>
+			<div id="content"><div id="chapter"></div><div id="live"></div></div>
+		</div>
+		
+		</div>
+		
+		<!-- 加入授课班按钮 -->
+		<p id="add_class" hidden>立即报名</p>
+		
+		<!-- 点播列表栏 -->
+		<div id="course" hidden>
+			<div id="title">
+				<p id="txt">数据库基础介绍</p>
+				<div id="button" status='show'></div>
+			</div>
+			<div id="content"></div>
+		</div>
+		
+		<!-- 点播列表项 -->
+		<div id="item" hidden>
+			<p id="txt">一位数组的定义及使用</p>
+			<p id="time"></p>
+			<p id="free" hidden>免费</p>
+			<p id="gold" hidden></p>
+		</div>
+		
+		<!-- 直播列表项 -->
+		<div id="live_item" hidden>
+			<p id="date"><span id="day"></span><span id="year"></span></p>
+			<img id="line" src="/resource/live_item.png" />
+			<div id="content">
+				<p id="title"></p>
+				<p id="statu"></p>
+				<p id="time"></p>
+				<p id="price"></p>
+			</div>
+		</div>
+	
+	</body>
+	
+	<script src="/core/starry.js" main='js/main'></script>
+</html>

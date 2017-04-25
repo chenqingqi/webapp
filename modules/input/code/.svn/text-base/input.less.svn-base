@@ -1,0 +1,30 @@
+#code_input
+{
+    width: 560px;
+    height: 60px;
+    border-bottom: 1px solid #999;
+    
+    input
+    {
+        float: left;
+        width: 260px;
+        height: 60px;
+        border: none;
+        text-indent: 15px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+    
+    #btn
+    {
+        float: right;
+        height: 44px;
+        padding: 0 15px 0 15px;
+        margin: 5px 5px 0 0;
+        line-height: 44px;
+        border-radius: 5px;
+        border: 1px solid #5baef5;
+        color: #5baef5;
+       
+    }
+}

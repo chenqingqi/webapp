@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="register.css" rel="stylesheet"/>
+		<title>注册</title>
+	</head>
+	<body  hidden>
+		
+		<!-- 主面板-->
+		<div id="panel">
+			<div id="content">
+				
+				<!-- 账号 -->
+				<div id="user">
+					<div id="account">
+						<p id="area">+86</p>
+						<input type="text" value="请输入手机号码"/>
+						<img id="clear" src="/resource/cross.png" hidden="true"/>
+					</div>
+					<p id="nextbtn">下一步</p>
+					<p id="typebtn">使用邮箱地址注册</p>
+				</div>
+				
+				<!-- 验证 -->
+				<div id="check">
+					<p id="info" hidden="true">验证码已发送至<br><span>13608910070</span></p>
+					<div id="code_input">
+						<input value="请输入验证码"></input>
+						<p id="btn">获取验证码</p>
+					</div>
+					<p id="submit">提交</p>
+				</div>
+				
+				<!-- 密码 -->
+				<div id="code">
+					<div id="password" hidden="true">
+						<img id="icon" src="/resource/lock.png"/>
+						<input value="请输入密码"/>
+						<img id="clear" src="/resource/cross.png" hidden="true"/>
+						<img id="eye"   src="/resource/eye_open.png"/>
+					</div>
+					<p id="submit">完成</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 标题栏 -->
+		<!--<div id="titlebar">
+			<div id="back"></div>
+			<p id="title">手机号注册</p>
+		</div>-->
+		
+		<!-- 简单提示框 -->
+		<div id="tip" hidden="true"><p></p></div>
+		
+	</body>
+	<script src="/core/starry.js" main='register'></script>
+</html>

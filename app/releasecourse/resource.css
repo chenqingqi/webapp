@@ -1,0 +1,363 @@
+/**
+ * 导入通用类
+ */
+@import url("/module/style.css");
+@import url("/module/clickstyle.css");
+
+html, body {
+    width: 640px;
+    height: 100%;
+    background-color: #F0F2F6;
+}
+
+/**
+ * 标题栏
+ */
+#titlebar
+{
+	width: 640px;
+	height: 88px;
+	background-color: #5BAEF5;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#titlebar #back
+{
+	display: block;
+	width : 50px;
+	height: 50px;
+	padding: 15px;
+	float: left;
+}
+
+#titlebar #back:hover
+{
+	-webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}
+
+#titlebar #title
+{
+	float: left;
+	width: 480px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	color: #FFF;
+	font-size: 32px;
+}
+/*
+ * 课程详情样式
+ */
+#resourcecontent{
+	width: 640px;
+	/*margin-top: 88px;*/
+	height: 290px;
+	background-color:rgb(99,136,174);
+}
+#resource_item{
+	width: 630px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 30px;
+}
+#resource_item_img{
+	float: left;
+	width: 230px;
+    height: 130px;
+}
+#resource_item_c{
+	width: 330px;
+    height: 130px;
+    margin-left: 15px;
+    float: left;
+    color: #FFFFFF;
+}
+#resource_item_title{
+	width: 330px;
+    height: 70px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+#resource_item_but{
+	width: 330px;
+	height: 55px;
+	color: #FFFFFF;
+	font-size: 20px;
+	line-height: 55px;
+	vertical-align: middle;
+}
+#resource_item_fabu{
+	width: 100%;
+	height: 50px;
+	margin-top: 5px;
+	background-color:rgb(91,174,245);
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+#back_right{
+	width : 50px;
+	height: 50px;
+	margin-top: 40px;
+	transform: rotate(180deg);
+}
+/*
+ * 授课班
+ */
+#Teaching{
+	width: 610px;
+	margin-left: 15px;
+	height: 88px;
+	background-color: #FFFFFF;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-top: 42px;
+}
+#teachingico{
+	width: 17px;
+	height: 24px;
+	top: 0px;
+	margin-left: 14px;
+	float: left;
+}
+#Teaching span{
+	height: 88px;
+	line-height: 88px;
+	color:#5BAEF5;
+	float: left;
+	margin-left: 20px;
+}
+#addClass{
+	float: right;
+	margin-right: 25px;
+	background-color:#5BAEF5;
+	font-size: 20px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color:#FFFFFF;
+	width: 143px;
+	border-radius: 5px;
+	margin-top: 16px;
+}
+/*
+ * 授课班级列表
+ */
+#item_class {
+    width: 610px;
+    /*border-bottom: 1px solid #e3e9ee;*/
+    overflow: hidden;
+    background-color: #FFF;
+    margin-left: 15px;
+}
+#item_class img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px;
+    float: left;
+}
+#item_class #info {
+    width: 450px;
+    height: 120px;
+    line-height: 36px;
+    padding: 20px 0;
+    float: left;
+}
+#item_class #info #title {
+    height: 36px;
+    min-width: 200px;
+}
+#item_class #info #create_name {
+    height: 36px;
+    font-size: 20px;
+    color: #a1a1a1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#item_class #info #memberNum {
+    margin-top: 6px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #a1a1a1;
+    border-radius: 15px;
+    background: url(/resource/member.png) no-repeat 10px center;
+    background-size: 25px 23px;
+    padding-right: 10px;
+    text-indent: 43px;
+    font-size: 20px;
+    color: #a1a1a1;
+    display: inline-block;
+}
+/*
+ * 操作列表
+ */
+#operation_list{
+	width: 610px;
+	height: 88px;
+	margin-left: 15px;
+	border-bottom: 1px solid #e3e9ee;
+	background-color: #FFF;
+}
+#operation_list .operation_list_class{
+	width: 151px;
+	float: left;
+	height: 80px;
+	border-right: 1px solid #e3e9ee;
+}
+#operation_list .operation_list_class img{
+	width: 33px;
+	height: 33px;
+	margin-left: 60px;
+}
+#operation_list .operation_list_class span{
+	font-size: 20px;
+	width: 100%;
+	float: left;
+	text-align: center;
+	height: 52px;
+	vertical-align: top;
+}
+#operation_list #last{
+	border: 0px !important;
+}
+
+/*
+ * 五个连接
+ */
+#operation_list_five{
+	width: 610px;
+	height: 88px;
+	margin-left: 15px;
+	border-bottom: 1px solid #e3e9ee;
+	background-color: #FFF;
+}
+#operation_list_five .operation_list_class{
+	width: 121px;
+	float: left;
+	height: 80px;
+	border-right: 1px solid #e3e9ee;
+}
+#operation_list_five .operation_list_class img{
+	width: 33px;
+	height: 33px;
+	margin-left: 44px;
+}
+#operation_list_five .operation_list_class span{
+	font-size: 20px;
+	width: 100%;
+	float: left;
+	text-align: center;
+	height: 52px;
+	vertical-align: top;
+}
+#operation_list_five #last{
+	border: 0px !important;
+}
+
+/*
+ * 进度条
+ */
+#loding{
+     top: 500px;
+     left: 250px;
+     position: absolute;
+}	
+	#wrapper {
+	height: 100%;
+	width: 640px;
+	margin-top: 1px;
+	position: relative;
+	overflow: hidden;
+
+	/* Prevent native touch events on Windows */
+	-ms-touch-action: none;
+
+	/* Prevent the callout on tap-hold and text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Prevent text resize on orientation change, useful for web-apps */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+#scroller {
+	height: auto;
+	position: absolute;
+
+	/* Prevent elements to be highlighted on tap */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	/* Put the scroller into the HW Compositing layer right from the start */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+/*
+ * 进度条
+ */
+#lodings{
+	width: 90px;
+	margin-left: 45%;
+}
+/*
+ * 提示
+ */
+#more_tishi{
+    width: 400px;
+    bottom: 50px;
+    position: absolute;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    background-color: rgba(15, 14, 14, 0.45);
+    border-radius: 5px;
+    margin-left: 120px;
+    color: #FFFFFF;
+}
+/*#noClick{
+	width: 640px;
+	height: 100%;
+	background-color: rgba(15, 14, 14, 0);
+	z-index: 100;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}*/
+#addloding{
+	width: 680px;
+	text-align: center;
+	height: 161px;
+	line-height: 161px;
+	z-index: 13px;
+	position: absolute;
+    bottom: 0px;
+}
+#prompt{
+	width: 440px;
+    bottom: 50px;
+    position: absolute;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgba(15, 14, 14, 0.45);
+    border-radius: 5px;
+    margin-left: 100px;
+    color: #FFFFFF;
+}

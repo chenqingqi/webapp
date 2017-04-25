@@ -1,0 +1,2 @@
+<!-- 文本输入框 -->
+<div class="user_input" id="text_input" hidden="true"><img id="icon" src="/resource/pople.png"/><input type="text" value="请输入手机号/邮箱/学号"/><div id="clear" hidden="true"></div></div>

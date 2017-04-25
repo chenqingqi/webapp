@@ -1,0 +1,298 @@
+/**
+ * 导入通用类
+ */
+@import "/module/style.css";
+
+#body
+{
+    position: fixed;
+    overflow: hidden;
+}
+
+#player
+{
+    width: 640px;
+    height: 360px;
+    background-color: #000;
+    
+    position: relative;
+    
+    #play_btn,#video_loading
+    {
+        width: 80px;
+        height: 80px;
+        
+        position: absolute;
+        left: 280px;
+        top:140px ;
+        
+        z-index: 88;
+    }
+    
+    #tip
+    {
+        width: 640px;
+        height: 360px;
+        
+        position: absolute;
+        left: 0px;
+        top:0px ;
+        
+        font-size: 24px;
+        color: #EAE0E2;
+        text-align: center;
+        line-height: 450px;
+        
+        opacity: 0.9;
+        z-index: 999;
+    }
+    
+    #video
+    {
+        width: 640px;
+        height: 360px;
+    }
+    
+    #pic
+    {
+        width: 640px;
+        height: 360px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+    }
+}
+
+#im
+{
+    width: 640px;
+    background-color: #F2F3F7;
+    position: relative;
+    
+    #talk
+    {
+        float: left;
+        width: 640px;
+        padding: 15px 0 15px 0;
+        
+        
+        .left
+        {
+            #nicename
+            {
+                float: left;
+                width: 100%;
+                padding: 15px 15px 0px 5px;
+                margin: 15px 15px 0px 15px;
+                color: #888;
+                font-size: 22px;
+            }
+            
+            #content
+            {
+                float: left;
+                padding: 15px;
+                margin: 15px 15px 0px 15px;
+                background-color: #FFF;
+                border: 1px solid #E9E9E9;
+                border-radius: 5px;
+                font-size: 26px;
+            }  
+        }
+        
+        .right
+        {
+            #nicename
+            {
+                float: right;
+                width: 100%;
+                padding: 15px 15px 0px 15px;
+                text-align: right;
+                color: #888;
+                font-size: 22px;
+            }
+            
+            #content
+            {
+                float: right;
+                padding: 15px;
+                margin: 15px 15px 0px 15px;
+                background-color: cornflowerblue;
+                border: 1px solid #E9E9E9;
+                border-radius: 5px;
+                font-size: 26px;
+                color: #FFF;
+            }  
+        }
+    }
+    
+    #close
+    {
+        width: 640px;
+        height: 150px;
+        position: absolute;
+        line-height: 250px;
+        text-align: center;
+       
+        background-image: url(/resource/talk_close.png);
+        background-size: 105px 100px;
+        background-repeat: no-repeat;
+        background-position-x: 267px;
+    }
+}
+
+
+/**
+ * 聊天输入面板 
+ */
+#input_panel
+{
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    z-index: 99;
+    
+    /**
+     * 表情
+     */
+    #emotions
+    {
+        width: 620px;
+        padding: 20px 10px 20px 10px;
+        background-color: #FFF;
+        
+        img
+        {
+            float: left;
+            width: 40px;
+            padding: 10px;
+            border: 1px solid #e9e9e9;
+            background-color: #FFF;
+        }
+        
+        
+        img:active
+        {
+            -webkit-filter:brightness(95%);
+            filter:brightness(95%);
+        }
+    }
+    
+    
+    /**
+     * 输入框 
+     */
+    #input
+    {
+        float: left;
+        width: 640px;
+        height: 90px;
+        background-color: #FFF;
+        
+        #icon
+        {
+            float: left;
+            width: 90px;
+            height: 90px;
+            background-image: url(/resource/talk_icon.png);
+            background-repeat: no-repeat;
+            background-position: 20px 20px;
+        }
+        
+        #icon:active
+        {
+            opacity: 0.3;
+        }
+        
+        #user_input
+        {
+            float: left;
+            width: 458px;
+            height: 58px;
+            margin-top: 15px;
+            background-color: #FFF;
+            border: 1px solid #E9E9E9;
+            text-indent: 15px;
+            color: #666;
+        }
+        
+        #button
+        {
+            float: left;
+            width: 90px;
+            height: 90px;
+            background-color: #FFF;
+            text-align: center;
+            line-height: 90px;
+        }
+        
+        #button:active
+        {
+            opacity: 0.3;
+        }
+    }
+}
+
+
+
+
+
+
+/**
+ * 聊天大图片 
+ */
+#photo
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    border-bottom: 2px solid rgba(0,0,0,0.9);
+    
+    z-index: 999;
+    
+    #content
+    {
+        position: absolute;  
+        top: 0; left: 0; bottom: 0; right: 0; 
+        margin: auto;  
+        width: 100%;
+    }
+    
+    #close
+    {
+        position: absolute; 
+        left: 0;right: 0; 
+        bottom: 30px; 
+        margin:0 auto;
+    }
+    
+    #close:active
+    {
+        -webkit-filter:brightness(85%);
+        filter:brightness(85%);
+    }
+}
+
+
+/**
+ * 简单提示
+ */
+#simpletip
+{
+    position:absolute;
+    z-index: 999;
+    
+    p
+    {
+        padding:15px;
+        border-radius:6px;
+        background-color:#333;
+        color:#FFF;
+    }
+}

@@ -1,0 +1,523 @@
+/**
+ * 导入通用类
+ */
+@import "/module/style.css";
+
+body
+{
+   
+    background-color:#F2F3F7;
+    position: fixed;
+    overflow: hidden;
+    
+    #scroll
+    {
+        overflow-y:auto;
+    }
+    
+    
+    /**
+     * 播放器 
+     */
+    #player
+    {
+        position: relative;
+        
+        width: 640px;
+        height: 360px;
+       
+        background-color : #000;
+        background-repeat: no-repeat;
+        background-size: 640px 365px;
+        
+        #loading
+        {
+            width : 80px;
+            height: 80px;
+            
+            position: absolute;
+            left: 280px;
+            top : 138px;
+            
+            opacity: 0.8;
+            z-index: 999;
+        }
+        
+        video
+        {
+            width : 640px;
+            height: 360px;
+            background-color: #000;
+            
+            position:absolute;
+            top :0px;
+            left:0px;
+        }
+    }
+    
+    
+    
+    /**
+     * 课程简介 
+     */
+    #intro
+    {
+        width: 640px;
+        height: 80px;
+        background-color: #FFF;
+        
+        #title
+        {
+            position: relative;
+            
+            width: 640px;
+            height: 79px;
+            
+            background-color: #FFF;
+            background-image: url(/resource/class_info.png);
+            background-repeat: no-repeat;
+            background-position: 10px 10px;
+            border-bottom: 1px solid #E9E9E9;
+            
+            line-height: 80px;
+            text-indent: 70px;
+        }
+        
+        #arrow
+        {
+            width: 80px;
+            height: 80px;
+            background-color: #FFF;
+            background-image: url(/resource/arrow_right.png);
+            background-repeat: no-repeat;
+            background-size: 50px 50px;
+            background-position: 15px 15px;
+            
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        #arrow:active
+        {
+            -webkit-filter:brightness(95%);
+            filter:brightness(95%);
+        }
+        
+        
+        #content
+        {
+            padding: 15px 15px 20px 15px;
+            color: #888;
+            font-size: 24px !important;
+            line-height: 38px;
+        }
+    }
+    
+    
+    /**
+     * 授课班 
+     */
+    #classes
+    {
+        width: 640px;
+        height: 80px;
+        background-color: #FFF;
+        
+        #title
+        {
+            position: relative;
+            
+            width: 640px;
+            height: 79px;
+            
+            background-color: #FFF;
+            background-image: url(/resource/classes.png);
+            background-repeat: no-repeat;
+            background-position: 10px 10px;
+            border-bottom: 1px solid #E9E9E9;
+            
+            line-height: 80px;
+            text-indent: 70px;
+            
+            
+            #price
+            {
+                float: right;
+                height: 79px;
+                text-indent: 0;
+            }
+            
+            #arrow
+            {
+                width: 80px;
+                height: 80px;
+                background-color: #FFF;
+                background-image: url(/resource/arrow_right.png);
+                background-repeat: no-repeat;
+                background-size: 50px 50px;
+                background-position: 15px 15px;
+                
+                float: right;
+            }
+            
+            #arrow:active
+            {
+                -webkit-filter:brightness(95%);
+                filter:brightness(95%);
+            }
+        }
+        
+        #content
+        {
+            li
+            {
+                height: 80px;
+                line-height: 80px;
+                text-indent: 70px;
+                background-color: #FFF;
+                border-bottom: 1px solid #E9E9E9;
+                font-size: 24px;
+                
+                span
+                {
+                    float: right;
+                    margin-right: 80px;
+                    height: 79px;
+                    text-indent: 0px;
+                }
+            }
+            
+            li:active
+            {
+                -webkit-filter:brightness(95%);
+                filter:brightness(95%);
+            }
+        }
+    }
+    
+    
+    /**
+     * 选项卡 
+     */
+    #tab
+    {
+       width: 640px;
+       background-color: #FFF;
+       text-align: center;
+       line-height: 80px;
+       margin-top: 15px;
+       
+       #chapter_btn
+       {
+           float: left;
+           width: 320px;
+           height: 78px;
+           background-color: #FFF;
+       }
+       
+       #chapter_btn:hover
+       {
+           border-bottom: 2px solid #333;
+       }
+       
+       #live_btn
+       {
+           float: left;
+           width: 320px;
+           height: 78px;
+           background-color: #FFF;
+       }
+       
+       #live_btn:hover
+       {
+           border-bottom: 2px solid #333;
+       }
+       
+       #content
+       {
+           float: left;
+           width: 640px;
+           border-top: 1px solid #E9E9E9;
+           
+           #chapter
+           {
+               float: left;
+               background-color: #FFF;
+               width: 640px;
+           }
+           
+           #live
+           {
+               width: 640px;
+               background-color: #F2F3F7;
+               padding-top : 20px;
+               padding-bottom: 100px;
+           }
+       }
+    }
+    
+    
+    #course
+    {
+        width: 640px;
+        background-color: #F2F3F7;
+        
+        #title
+        {
+            width: 640px;
+            height: 70px;
+            background-color: #FFF;
+            text-align: left;
+            margin-top: 0px;
+            
+            #txt
+            {
+                float: left;
+                width: 560px;
+                height: 70px;
+                line-height: 70px;
+                text-indent: 80px;
+                
+                background-image: url(/resource/book_line_black.png);
+                background-repeat: no-repeat;
+                background-size: 40px 40px;
+                background-position: 20px 15px;
+           }
+            
+            #button
+            {
+                float: left;
+                width: 80px;
+                height:70px;
+               
+                background-image: url(/resource/arrow_rotate.png);
+                background-repeat: no-repeat;
+                background-size: 50px 50px;
+                background-position: 15px 10px;
+            }
+        }
+        
+        #content
+        {
+            width: 640px;
+            
+            #item
+            {
+                width: 640px;
+                height: 70px;
+                
+                line-height: 70px;
+                background-image: url(/resource/video.png);
+                background-repeat: no-repeat;
+                background-size: 40px 40px;
+                background-position: 75px 15px;
+                
+                position: relative;
+                
+                background-color: #F2F3F7;
+                
+                #txt
+                {
+                    float: left;
+                    width: 320px;
+                    height: 70px;
+                    margin-left: 120px;
+                    text-align: left;
+                }
+                
+                #free
+                {
+                   float: right;
+                   width: 80px;
+                   height: 30px;
+                   margin: 18px 15px 0 0;
+                   
+                   text-indent: 0px;
+                   text-align: center;
+                   font-size: 20px;
+                   line-height: 30px;
+                   border: 1px solid #666;
+                   border-radius: 22px ;
+                   color: #666;
+                }
+                
+                #gold
+                {
+                    float: right;
+                    width: 80px;
+                    height: 70px;
+                    margin-right:15px;
+                    text-indent: 40px;
+                    font-size: 22px;
+                    color: #666;
+                    background-image: url(/resource/gold.png);
+                    background-repeat: no-repeat;
+                    background-size: 30px 30px;
+                    background-position: 0px 20px;
+                }
+                
+                #time
+                {
+                    float: right;
+                    width: 70px;
+                    height: 70px;
+                    margin-right:15px;
+                    
+                    font-size: 22px;
+                    text-indent: 0px;
+                    line-height: 70px;
+                    text-align: center;
+                    color: #666;
+                }
+            }
+            
+            
+            #item:hover
+            {
+                -webkit-filter:brightness(95%);
+                        filter:brightness(95%);
+            }
+        }
+    }
+    
+    
+    /**
+     * 加入课程按钮 
+     */
+    #add_class
+    {
+        width: 640px;
+        height: 80px;
+        background-color: #f55f61;
+        position: absolute;
+        bottom: -1px;
+        z-index: 999;
+        
+        color: #fff;
+        line-height: 80px;
+        text-align: center;
+        
+        background-image: url(/resource/add_course.png);
+        background-repeat: no-repeat;
+        background-size: 35px 35px;
+        background-position: 222px 17px;
+    }
+    
+    #add_class:hover
+    {
+        -webkit-filter:brightness(90%);
+                filter:brightness(90%);    
+    }
+    
+    /**
+     * 直播列表项 
+     */
+    #live_item
+    {
+        width: 640px;
+        height: 134px;
+        
+        #date
+        {
+            
+            width: 100px;
+            height: 134px;
+            
+            float: left;
+            position: relative;
+            
+            line-height: 90px;
+           
+            #day
+            {
+                color: #999;
+            }
+            
+            #year
+            {
+                display: block;
+                position: absolute;
+                top: 36px;
+                left: 24px;
+                
+                font-size: 22px;
+                color: #BBB;
+            }
+        }
+        
+        #line
+        {
+            float: left;
+        }
+        
+        #content
+        {
+            width: 480px;
+            height: 110px;
+            margin-top: 12px;
+            margin-left: 15px;
+            border-top:none;
+            background-color: #FFF;
+            
+            border-radius: 8px;
+            
+            #title
+            {
+                float: left;
+                width: 350px;
+                height: 60px;
+                
+                line-height: 70px;
+                text-align: left;
+                text-indent: 20px;
+                font-size: 28px;
+            }
+            
+            #statu
+            {
+                float: left;
+                width: 130px;
+                height: 60px;
+                font-size: 22px;
+                line-height: 60px;
+                
+            }
+            
+            #time
+            {
+                float: left;
+                width: 350px;
+                height: 50px;
+                
+                line-height: 50px;
+                text-align: left;
+                text-indent: 20px;
+                font-size: 22px;
+                color: #999;
+            }
+            
+            #price
+            {
+                float: left;
+                width: 130px;
+                height: 50px;
+                
+                line-height: 50px;
+                text-align: center;
+                font-size: 22px;
+                color: #999;
+            }
+        }
+        
+        #content:hover
+        {
+            background-color: #F2F3F7;
+        }
+    }
+}
+
+
+
+
+

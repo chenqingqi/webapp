@@ -1,0 +1,313 @@
+/**
+ * 导入通用类
+ */
+@import url("/module/style.css");
+@import url("/module/tip/tip.css");
+
+
+/**
+ * 标题栏
+ */
+#titlebar
+{
+	width: 640px;
+	height: 80px;
+	background-color: #5BAEF5;
+	position: fixed;
+	top: 0;
+}
+
+#titlebar #back
+{
+	width: 80px;
+	height: 80px;
+	background-image: url(/resource/back.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 12px 16px;
+    float: left;
+}
+
+#titlebar #back:hover
+{
+	-webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}
+
+#titlebar #title
+{
+	float: left;
+	width: 480px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	color: #FFF;
+	font-size: 32px;
+}
+
+
+
+/**
+ * 面板
+ */
+#panel
+{
+	width:640px;
+	height: 100%;
+	background-color: #999;
+}
+
+
+#panel #content
+{
+	width:1920px;
+	height: 100%;
+	background-color: #eee;
+}
+
+#panel #content #user
+{
+	width: 640px;
+	height: 100%;
+	background-color: #FFF;
+	float: left;
+}
+
+
+#panel #content #check
+{
+	width: 640px;
+	height: 100%;
+	background-color: #FFF;
+	float: left;
+}
+
+#panel #content #code
+{
+	width: 640px;
+	height: 100%;
+	background-color: #FFF;
+	float: left;
+}
+
+
+
+/**
+ * 用户////////////////////////////////
+ */
+#user #account
+{
+	width: 560px;
+    height: 70px;
+    border-bottom: 1px solid #999;
+    margin:60px 0 0 40px;
+}
+
+
+#user #account #area
+{
+	width: 50px;
+	height: 80px;
+	line-height: 75px;
+	padding-left: 10px;
+	float: left;
+}
+
+
+#user #account input
+{
+	width:440px ;
+    height: 70px;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    text-indent: 10px;
+    
+    float: left;
+}
+
+
+#user #account #clear
+{
+	width: 50px;
+    height: 50px;
+    padding: 12px 5px 12px 5px;
+    float: right;
+}
+
+
+/**
+ * 下一步按钮
+ */
+#user #nextbtn
+{
+	width:560px;
+	height:80px;
+	background-color: #5BAEF5;
+	border-radius: 6px;
+	margin: 90px 0 0 40px;
+	
+	color: #FFF;
+	line-height: 80px;
+	text-align: center;
+	font-size: 32px;
+	
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+
+
+/**
+ * 注册类型切换按钮
+ */
+#user #typebtn
+{
+	width: 640px;
+	height: 80px;
+	background-color: #FFF;
+	line-height: 80px;
+	text-align: center;
+	position: absolute;
+}
+
+
+
+/**
+ * 验证////////////////////////////////
+ */
+#check #info
+{
+	width: 640px;
+	height: 100px;
+	padding-top:60px;
+	text-align: center;
+	line-height: 45px;
+	color: #888;
+}
+
+
+#check #info span
+{
+	font-size: 40px;
+	text-align: center;
+	color: #333;
+}
+
+
+#check #code_input
+{
+	width: 560px;
+    height: 60px;
+    border-bottom: 1px solid #999;
+    margin: 60px 0 0 40px;
+}
+
+
+#check #code_input input
+{
+    float: left;
+    width: 260px;
+    height: 60px;
+    border: none;
+    text-indent: 15px;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+
+#check #code_input #btn
+{
+    float: right;
+    height: 44px;
+    padding: 0 15px 0 15px;
+    margin: 5px 5px 0 0;
+    line-height: 44px;
+    border-radius: 5px;
+    border: 1px solid #5baef5;
+    color: #5baef5;
+}
+
+
+#check #submit
+{
+	width:560px;
+	height:80px;
+	background-color: #5BAEF5;
+	border-radius: 6px;
+	margin: 90px 0 0 40px;
+	
+	color: #FFF;
+	line-height: 80px;
+	text-align: center;
+	font-size: 32px;
+	
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+
+
+/**
+ * 重设密码////////////////////////////////
+ */
+#code #password
+{
+	width: 560px;
+    height: 70px;
+    border-bottom: 1px solid #999;
+    margin:60px 0 0 40px;
+}
+
+#code #password #icon
+{
+	width: 50px;
+	height: 50px;
+	padding: 10px 5px 0 5px;
+	
+	float: left;
+}
+
+#code #password input
+{
+	width:380px ;
+    height: 70px;
+    background: transparent;
+    border: none;
+    
+    font-size: 28px;
+    text-indent: 10px;
+    
+    float: left;
+}
+
+#code #password #clear
+{
+	width: 50px;
+    height: 50px;
+    padding: 12px 5px 12px 5px;
+    
+    float: right;
+}
+
+
+#code #password #eye
+{
+	width: 50px;
+    height: 40px;
+    padding: 18px 5px 6px 5px;
+    
+    float: right;
+}
+
+#code #submit
+{
+	width:560px;
+	height:80px;
+	background-color: #5BAEF5;
+	border-radius: 6px;
+	margin: 90px 0 0 40px;
+	
+	color: #FFF;
+	line-height: 80px;
+	text-align: center;
+	font-size: 32px;
+	
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}

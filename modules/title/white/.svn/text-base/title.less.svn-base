@@ -1,0 +1,56 @@
+/**
+ * 白色标题栏
+ */
+#white_title
+{
+    width:640px;
+    height:88px;
+    background-color: #FFF;
+    border-bottom: 1px solid #E9E9E9;
+    
+    #back
+    {
+        float: left;
+        width: 88px;
+        height: 88px;
+        background-image: url(/resource/back_black.png);
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        background-position: 15px 19px;
+    }
+    
+    #back:hover
+    {
+        -webkit-filter:brightness(90%);
+                filter:brightness(90%);
+    }
+    
+    #title
+    {
+        float: left;
+        width: 464px;
+        height: 88px;
+        
+        color: #333;
+        text-align: center;
+        line-height: 88px;
+        font-size: 32px;
+    }
+    
+    #cross
+    {
+        float: left;
+        width: 88px;
+        height: 88px;
+        background-image: url(/resource/cross_black.png);
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        background-position: 15px 19px;
+    }
+    
+    #cross:hover
+    {
+        -webkit-filter:brightness(90%);
+                filter:brightness(90%);
+    }
+}

@@ -1,0 +1,2 @@
+<!-- 白色标题栏 -->
+<div class="white_title" id="white_title" hidden="true"><div id="back"></div><p id="title"></p><div id="cross" hidden="true"></div></div>

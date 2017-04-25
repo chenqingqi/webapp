@@ -1,0 +1,2 @@
+<!-- 简单标题栏 -->
+<div class="title" id="simple_title" hidden="true"><div id="back"></div><p id="title"></p></div>

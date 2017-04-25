@@ -1,0 +1,220 @@
+/**
+ * 导入通用类
+ */
+@import url("/module/style.css");
+
+html, body {
+    width: 640px;
+    height: 100%;
+    background-color: #F0F2F6;
+}
+
+/**
+ * 标题栏
+ */
+#titlebar
+{
+	width: 640px;
+	height: 88px;
+	background-color: #5BAEF5;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#titlebar #back
+{
+	display: block;
+	width : 50px;
+	height: 50px;
+	padding: 15px;
+	float: left;
+}
+
+#titlebar #back:hover
+{
+	-webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}
+
+#titlebar #title
+{
+	float: left;
+	width: 480px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	color: #FFF;
+	font-size: 32px;
+}
+/*
+		 * 搜索
+		 */
+	#button_search {
+             width: 640px;
+             margin-top: 88px;
+             position: absolute;
+             background-color:#F0F2F6 ;
+                   }
+    #button_search #container {
+    width: 600px;
+    margin: 15px auto;
+    height: 55px;
+    border: 1px solid #F6F6F6;
+    border-radius: 6px;
+    background-color: #fff;
+}
+#button_search #container span {
+    width: 120px;
+    margin: 0 auto;
+    display: block;
+}
+#button_search #container span img {
+    width: 32px;
+    height: 32px;
+    margin: 10px 10px 0 0;
+    float: left;
+}
+#button_search #container span b {
+    font-size: 28px;
+    color: #a1a1a1;
+    font-weight: 400;
+    line-height: 55px;
+}
+/*
+ * 资源库
+ */
+#item_course_library {
+    width: 286px;
+    height: 300px;
+    background-color: #fff;
+    margin-left: 22.6px;
+    float: left;
+}
+#item_course_library img {
+    height: 161px;
+    width: 286px;
+    overflow: hidden;
+}
+#item_course_library #title {
+    width: 286px;
+    height: 34px;
+    margin-top: 10px;
+    line-height: 34px;
+    text-indent: 10px;
+    font-size: 26px;
+}
+#item_course_library #school {
+    width: 100%;
+    height: 45px;
+    background-image: url(/resource/school.png);
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    font-size: 20px;
+    line-height: 45px;
+    text-indent: 38px;
+    color: #999;
+}
+#item_course_library #price {
+    font-size: 20px;
+    line-height: 32px;
+    text-indent: 10px;
+}
+#item_course_library .green {
+    color: green;
+}
+.green {
+    color: green;
+}
+#wrapper_school{
+	width: 640px;
+	height:auto;
+	margin-top: 197.6px;
+}
+/*
+ * 进度条
+ */
+#loding{
+     top: 500px;
+     left: 250px;
+     position: absolute;
+}	
+#wrapper_school {
+	width: 640px;
+	position: relative;
+	overflow: hidden;
+
+	/* Prevent native touch events on Windows */
+	-ms-touch-action: none;
+
+	/* Prevent the callout on tap-hold and text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Prevent text resize on orientation change, useful for web-apps */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+#scroller_school {
+	background-color: #FFFFFF;
+	height: auto;
+	position: absolute;
+
+	/* Prevent elements to be highlighted on tap */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	/* Put the scroller into the HW Compositing layer right from the start */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+/*
+ * 进度条
+ */
+#lodings{
+	width: 90px;
+	margin-left: 45%;
+}
+#more_tishi{
+    width: 400px;
+    bottom: 50px;
+    position: absolute;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    background-color: rgba(15, 14, 14, 0.45);
+    border-radius: 5px;
+    margin-left: 120px;
+    color: #FFFFFF;
+}
+#noClick{
+	width: 640px;
+	height: 100%;
+	background-color: rgba(15, 14, 14, 0);
+	z-index: 100;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#addloding{
+	width: 680px;
+	text-align: center;
+	height: 88px;
+	line-height: 88px;
+	z-index: 13px;
+	position: absolute;
+    bottom: 0px;
+}
+
+

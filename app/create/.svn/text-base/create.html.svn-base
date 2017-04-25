@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="create.css" rel="stylesheet"/>
+		<title>创建账号</title>
+	</head>
+	<body hidden>
+		
+		<!-- 标题栏 -->
+		<div id="titlebar"><div id="back"></div><p id="title">新建账号</p></div>
+		
+		<!-- 账户1 -->
+		<div id="account_one">
+			<p id="type">河软高校云</p>
+			<div id="user">
+				<img id="icon" src=""/>
+				<p id="username">13608910070</p>
+			</div>
+		</div>
+		
+		<img id="arrow" src="/resource/arrow_bottom.png"/>
+		
+		<!-- 账户2 -->
+		<div id="account_two">
+			<p id="type">云联盟</p>
+			<div id="user">
+				<img id="icon" src=""/>
+				<p id="username">13608910070</p>
+			</div>
+		</div>
+		
+		<div id="submit">新建账号</div>
+		
+		<div id="tip">
+			<div id="panel">
+				<p id="type">河软高校云</p>
+				<div id="user">
+					<img id="icon" src=""/>
+					<p id="username">13608910070</p>
+				</div>
+				<p id="info">你的河软高校云账号、密码与云联盟一致</p>
+				<p id="enter">知道了</p>
+			</div>
+		</div>
+		
+		
+	</body>
+	<script src="/core/starry5.js" main='create'></script>
+</html>

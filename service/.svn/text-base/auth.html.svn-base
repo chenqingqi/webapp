@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="css/auth.css" rel="stylesheet"/>
+		<title>考试认证</title>
+	</head>
+	<body>
+		
+		<!-- 考试状态 -->
+		<div id="bar_audit" hidden="true">
+			<img id="icon" src="/service/img/audit.png" />
+			<p id="title">您的「报名表」审核中，请耐心等待</p>
+			<p id="subtitle" hidden="true">您可登陆官方申请「综合技术面试」</p>
+		</div>
+		
+		<!-- 考试公告 -->
+		<div id="panel_exam" hidden="true">
+			<p id="title">考试注意事项</p>
+			<p id="subtitle">考试科目</p>
+			<p id="subject">科目内容</p>
+			<p id="subtitle">考试时间</p>
+			<p id="time">年月日</p>
+			<p id="subtitle">考试地点</p>
+			<p id="place">地点描述</p>
+			<p id="subtitle">注意事项</p>
+			<p id="matter">事项描述</p>
+		</div>
+		
+		<!-- 公告板 -->
+		<div id="panel_notice">
+			<p id="title">报名须知</p>
+			<p id="text">1、报考前需通过所有的考核。<br> 2、你可登录官方网站下载报名表，填写完之后上传其报名表，等待老师审核。<br> 3、审核通过后，下方会显示考试时间、地点等信息；如审核未通过，则需要你重新填写报名表、上传等待审核。</p>
+		</div>
+		
+	</body>
+	<script src="/service/libs/require.js" main='js/auth'></script>
+</html>

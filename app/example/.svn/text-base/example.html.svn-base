@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="example.css" rel="stylesheet"/>
+		<title>例子</title>
+	</head>
+	<body>
+		
+		
+	<div id="box">
+		<div id="content">
+			123
+		</div>
+	</div>
+		
+	</body>
+	<script src="/core/starry.js" main='example'></script>
+</html>

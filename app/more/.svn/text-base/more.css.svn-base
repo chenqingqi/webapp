@@ -1,0 +1,112 @@
+/**
+ * 导入通用类
+ */
+@import url("/module/style.css");
+
+html, body {
+    width: 640px;
+    height: 100%;
+    background-color: #F0F2F6;
+}
+
+/**
+ * 标题栏
+ */
+#titlebar
+{
+	width: 640px;
+	height: 80px;
+	background-color: #5BAEF5;
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#titlebar #back
+{
+	display: block;
+	width : 50px;
+	height: 50px;
+	padding: 15px;
+	float: left;
+}
+
+#titlebar #back:hover
+{
+	-webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}
+
+#titlebar #title
+{
+	float: left;
+	width: 480px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	color: #FFF;
+	font-size: 32px;
+}
+/*
+ * 更多样式
+ */
+#button_arrow #info {
+    width: 640px;
+    height: 80px;
+    border-bottom: 1px solid #e9e9e9;
+    background-color: #fff;
+}
+#button_arrow #info:active{
+	background-color: #F0F2F6;
+}
+#button_arrow #info #title {
+    width: 520px;
+    float: left;
+}
+#button_arrow #info #title #img {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 22px 0 0 25px;
+    float: left;
+}
+#button_arrow #info #title p {
+    height: 80px;
+    line-height: 80px;
+    margin-left: 22px;
+    float: left;
+}
+#button_arrow #info #more {
+    width: 120px;
+    float: right;
+}
+#button_arrow #info #more #arrow_img {
+    width: 40px;
+    margin: 25px 18px 0 0;
+    float: right;
+}
+#logout{
+	width:600px;
+	margin-left: 20px;
+	margin-top: 60px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+	line-height: 80px;
+	height: 80px;
+	background-color: rgb(255,112,112);
+}
+#logout:hover{
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+}
+#logout:active{
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+}
+#logout:link{
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+}

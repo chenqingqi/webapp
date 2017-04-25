@@ -1,0 +1,329 @@
+/**
+ * 导入模块样式
+ */
+
+/**
+ * 白色标题栏
+ */
+#white_title
+{
+    width:640px;
+    height:88px;
+    background-color: #FFF;
+    border-bottom: 1px solid #E9E9E9;
+    
+    #back
+    {
+        float: left;
+        width: 88px;
+        height: 88px;
+        background-image: url(/resource/back_black.png);
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        background-position: 15px 19px;
+    }
+    
+    #back:hover
+    {
+        -webkit-filter:brightness(90%);
+                filter:brightness(90%);
+    }
+    
+    #title
+    {
+        float: left;
+        width: 464px;
+        height: 88px;
+        
+        color: #333;
+        text-align: center;
+        line-height: 88px;
+        font-size: 32px;
+    }
+    
+    #cross
+    {
+        float: left;
+        width: 88px;
+        height: 88px;
+        background-image: url(/resource/cross_black.png);
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        background-position: 15px 19px;
+    }
+    
+    #cross:hover
+    {
+        -webkit-filter:brightness(90%);
+                filter:brightness(90%);
+    }
+}
+#simple_tip
+{
+   
+    background-color:#333;
+    padding:15px;
+    border-radius:6px;
+    position:absolute;
+    z-index:999;
+    color:#fff
+}
+#logout
+{
+    width: 640px;
+    height: 101%;
+    background-color:rgba(0,0,0,0.5);
+    
+    position: absolute;
+    top: 0;
+    
+    #panel
+    {   
+       
+        width: 560px;
+        height: 230px;
+        background-color: #FFF;
+        margin: 0 auto;
+        padding-top: 50px;
+        border-radius: 10px;
+        
+        
+        #info
+        {
+            width: 560px;
+            height: 80px;
+            margin-left: 0;
+            line-height: 80px;
+            color: #333;
+            font-size: 28px;
+            text-align: center;
+        }
+        
+        #buttons
+        {
+            width: 560px;
+            height: 80px;
+            margin: 30px 0 0 0;
+            border-top: 1px solid #e9e9e9;
+            
+            #esc
+            {
+                float: left;
+                width: 278px;
+                height: 78px;
+                
+                line-height: 78px;
+                text-align: center;
+                color: dodgerblue;
+            }
+            
+            #esc:hover
+            {
+                background-color: #E9E9E9;
+            }
+            
+            #enter
+            {
+                float: left;
+                width: 278px;
+                height: 78px;
+                border-right: 1px solid #E9E9E9;
+                line-height: 78px;
+                text-align: center;
+                color: red;
+            }
+            
+            #enter:hover
+            {
+                background-color: #E9E9E9;
+            }
+        }
+    }
+}
+
+
+
+/**
+ * 模块-样式-通配
+ */
+*
+{
+    margin : 0;
+    padding: 0;
+    overflow: hidden;
+    border-color:#e9e9e9;
+    
+    color: #333333;
+    font-family: DroidSansFallback,DroidSans;
+    font-size: 26px;
+    word-break: break-all;
+    text-decoration:none;
+    cursor:none;
+}
+
+
+html,body
+{
+    width : 100%;
+    height: 100%;
+    padding-right: 17px;
+    background-color: #F0F2F6;
+    
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+   
+    user-select:none;
+    -webkit-user-select:none;
+}
+
+
+body
+{
+    display: none;
+}
+
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    color: #333;
+    p-decoration:none;
+}
+
+
+
+/**
+ * 主页面样式 
+ */
+body
+{
+    background-color: #FFF;
+    
+}
+
+#first_name,#next_name,#end_name
+{
+    width: 640px;
+    height: 80px;
+    margin-top: 80px;
+    
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    color: #999;
+}
+
+#next_name
+{
+    margin-top: 0px;
+}
+
+#end_name
+{
+    margin-top: -50px;
+}
+
+#first_account,#next_account,#end_account
+{
+    width: 560px;
+    height: 80px;
+    margin-left: 40px;
+    border-radius: 80px;
+    border: 1px solid #999;
+    
+    img
+    {
+        float: left;
+        width: 70px;
+        height: 70px;
+        margin: 5px 0 0 6px;
+        border-radius: 50%;
+    }
+    
+    p
+    {
+        width: 480px;
+        height: 88px;
+        
+        line-height: 80px;
+        font-size: 30px;
+        text-indent: 15px;
+        color: #000;
+    }
+}
+
+#next_account:hover
+{
+    border: 1px solid red;
+    
+    p
+    {
+        color: red;
+    }
+    
+}
+
+#end_account:hover
+{
+    border: 1px solid red;
+    color: red;
+    
+    p
+    {
+        color: red;
+    }
+}
+
+#icon
+{
+    width: 640px;
+    height: 120px;
+    text-align: center;
+    
+    img
+    {
+       width: 60px;
+       height: 60px;
+       margin-top: 35px;
+    }
+}
+
+#info
+{
+    width: 560px;
+    margin-left: 40px;
+    padding: 15px 0 15px 5px;
+    
+    line-height: 62px;
+    font-size: 24px;
+    text-align: center;
+    color: #999;
+    
+}
+
+#button
+{
+    width: 640px;
+    height: 124px;
+    background-image: url(/resource/button_radius.png);
+    background-size:640px 124px;
+    
+    position: fixed;
+    bottom: 0px;
+    
+    text-align: center;
+    line-height: 140px;
+    color: #FFF;
+    font-size: 32px;
+}
+
+#button:hover
+{
+    -webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="search.css" rel="stylesheet"/>
+		<title>搜索课程</title>
+	</head>
+
+
+	<body >
+	<!--搜索框栏目-->	
+ 			<!-- 搜索 -->
+<div id="bar_title_search">
+	<div id="title"><img id="img" src="/resource/back.png">
+		<div><img src="/resource/search-hui.png"><input id="search_value" type="text" placeholder="请输入搜索内容"></div>
+	</div>
+	<div id="text"><span>搜索</span></div>
+</div>	
+
+<div id="wrapper">
+		
+	<div id="scroller">
+		<!--课程-->
+<!--<div id="item_course_full" hidden="true">
+	<div id="logo"><img src="http://test.gkk.cn/Public/files/course/course-default1.jpg?5.1.4"></div>
+	<div id="container">
+	<p id="title">花钱测试</p><span id="price" class="red">￥0</span><span id="hour">0课时</span></div>
+</div>-->
+	
+	</div>
+	<div id="addloding" hidden="true"><img style="width: 80px;" src="/resource/loading.gif"/></div>
+</div>
+	
+<!--提示数据已经全部展示完毕-->
+<div id="more_tishi" hidden="true">没有更多了</div>
+
+<!--没有搜索记录-->
+<div  style="margin-top: 260px;" id="panel_empty"><img src="/resource/empty_search.png"><p>没有搜索记录</p></div>
+<!--正在加载-->
+
+</body>
+<script src="/core/starry.js" main='search'></script>
+</html>

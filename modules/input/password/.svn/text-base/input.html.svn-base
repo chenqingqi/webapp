@@ -1,0 +1,2 @@
+<!-- 密码输入框 -->
+<div class="password_input" id="password_input" hidden="true"><img id="icon" src="/resource/lock.png"/><input type="text" value="请输入密码"/><div id="eye"></div><div id="clear" hidden="true"></div></div>

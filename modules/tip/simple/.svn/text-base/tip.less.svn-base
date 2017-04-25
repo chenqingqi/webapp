@@ -1,0 +1,10 @@
+#simple_tip
+{
+   
+    background-color:#333;
+    padding:15px;
+    border-radius:6px;
+    position:absolute;
+    z-index:999;
+    color:#fff
+}

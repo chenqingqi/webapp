@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="feedback.css" rel="stylesheet"/>
+		<title>意见反馈</title>
+		
+
+	</head>
+	<body hidden="true">
+			<!-- 标题 -->
+		<div id="titlebar" >
+			<!--<img id="back" src="/resource/back.png"/>-->
+			<p id="title">意见反馈</p>
+			<div id="screen"><span id="button">发送</span></div>
+		</div>
+        <!--填写建议-->
+        <textarea id="txt"  placeholder="请提出您的宝贵意见"></textarea>
+
+       <div id="prompt" hidden="true"></div>
+	</body>
+	<script src="/core/starry.js" main='feedback'></script>
+</html>

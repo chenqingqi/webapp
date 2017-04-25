@@ -1,0 +1,16 @@
+/**
+ * 简单提示
+ */
+#tip
+{
+	position:absolute;
+	z-index: 999;
+}
+
+#tip p
+{
+	padding:15px;
+	border-radius:6px;
+	background-color:#333;
+	color:#FFF;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="resource.css" rel="stylesheet"/>
+		<title>课程详情</title>
+		
+
+	</head>
+	<body >
+			<!-- 标题 -->
+		<!--<div id="titlebar">
+			<img id="back" src="/resource/back.png"/>
+			<p id="title">课程详情</p>
+		</div>-->
+		
+        <div id="resourcecontent">
+        	<!--课程信息-->
+        	<div id="resource_item">
+        		 <img id="resource_item_img" src="" />
+        		 <div id="resource_item_c">
+        		 	<div id="resource_item_title"></div>
+        		 	<div id="resource_item_but">
+        		 		
+        		 		    <div id="resource_item_fabu">发布课程</div>
+        		 		
+        		 		
+        		 	</div>
+        		 </div>
+        		 <img id="back_right" hidden="true" src="/resource/back.png"/>
+        	</div>
+        	<!--标题-->
+        	<div id="Teaching" >
+        		 <img id="teachingico" src="/resource/bottom_ico.png" />
+        		 <span>授课班</span>
+        		 <div id="addClass">新增授课班</div>
+        	</div>
+        </div>   
+<!--默认授课班级列表-->
+<!--<div id="item_class">
+	<img src="/resource/default_class.png">
+	<div id="info">
+		<p id="title">加油吧！小子绘画班</p>
+		<p id="create_name">创建人：张明</p>
+		<p id="memberNum">25人</p>
+	</div>
+</div>
+<div id="operation_list">
+	<div class="operation_list_class">
+		<img src="/resource/a2.png" />
+		<span>作业</span>
+	</div>
+	<div class="operation_list_class">
+		<img src="/resource/a1.png" />
+		<span>考试</span>
+	</div>
+	<div class="operation_list_class">
+		<img src="/resource/a5.png" />
+		<span>学员</span>
+	</div>
+	<div class="operation_list_class" id="last">
+		<img src="/resource/a4.png" />
+		<span>点名</span>
+	</div>
+	
+</div>-->
+<!--普通授课班级列表-->
+<!--<div id="item_class">
+	<img src="/resource/default_class.png">
+	<div id="info">
+		<p id="title">加油吧！小子绘画班</p>
+		<p id="create_name">创建人：张明</p>
+		<p id="memberNum">25人</p>
+	</div>
+</div>
+<div id="operation_list_five">
+	<div class="operation_list_class">
+		<img src="/resource/a2.png" />
+		<span>作业</span>
+	</div>
+	<div class="operation_list_class">
+		<img src="/resource/a1.png" />
+		<span>考试</span>
+	</div>
+	<div class="operation_list_class">
+		<img src="/resource/a5.png" />
+		<span>学员</span>
+	</div>
+	<div class="operation_list_class">
+		<img src="/resource/a4.png" />
+		<span>点名</span>
+	</div>
+	<div class="operation_list_class" id="last">
+		<img src="/resource/a3.png" />
+		<span>设置</span>
+	</div>
+</div>-->
+
+<div id="wrapper">
+	<div id="scroller">
+
+		
+	</div>
+	<div id="addloding" hidden="true"><img style="width: 80px;" src="/resource/loading.gif"/></div>
+</div>
+
+<div id="more_tishi" hidden="true">没有更多了</div>
+
+<div id="prompt" hidden="true">没有更多了</div>
+
+	</body>
+	<script src="/core/starry.js" main='resource'></script>
+</html>

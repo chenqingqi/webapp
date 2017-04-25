@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link href="live.css" rel="stylesheet"/>
+		<title>直播页</title>
+		
+	</head>
+	<body>
+		
+		<!-- 播放器 -->
+		<div id="player">
+			<img id="play_btn" src="/resource/video.png" hidden/>
+			<p   id="video_tip" hidden>请稍候</p>
+			<img id="video_loading" src="/resource/video_loading.gif"/>
+			<video width="640px" height="360px" webkit-playsinline playsinline></video>
+			<div id="pic"></div>
+		</div>
+		
+		<!-- 聊天显示框 -->
+		<div id="im" hidden>
+			<div id="talk"></div>
+			<div id="close" hidden>聊天室已关闭</div>
+		</div>
+		
+		<!-- 输入面板 -->
+		<div id="input_panel" hidden>
+			<div id="emotions" hidden></div>
+			<div id="input">
+				<div id="icon"></div>
+				<input id="user_input" type="text" value="说点什么"/>
+				<div id="button">发送</div>
+			</div>
+		</div>
+		
+		<!-- 图片弹框 -->
+		<div id="photo" hidden>
+			<img id="content">
+			<img id="close" src="/resource/fail.png">
+		</div>
+		
+		<!-- 简单提示框 -->
+		<div id="simpletip" hidden="true"><p></p></div>
+		
+	</body>
+	<script src="/core/starry.js" main='js/live'></script>
+</html>

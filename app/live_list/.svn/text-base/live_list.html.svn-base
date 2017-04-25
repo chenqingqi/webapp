@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="live_list.css" rel="stylesheet"/>
+		<title>直播列表</title>
+		
+	</head>
+	<body>
+		
+		<!-- 正在直播 -->
+		<div id="live_list_start" hidden="true">
+			<div id="title">正在直播</div>
+			<div id="content"></div>
+		</div>
+		
+		<!-- 即将直播 -->
+		<div id="live_list_ready" hidden="true">
+			<div id="title">即将直播</div>
+			<div id="content"></div>
+		</div>
+		
+		<!-- 本校精品课列表项 -->
+		<div id="live_item" hidden="true">
+			<a id="link">
+				<img id="live_item_photo" src="/resource/course_photo.jpg">
+				<p id="live_item_title">直播课标题</p>
+				<p id="live_item_content"><span id="live_people">12345</span><span id='live_status'>即将直播</span></p>
+			</a>
+		</div>
+		
+		<!-- 没有直播 -->
+		<p id="nolive" hidden>暂无直播课程</p>
+	
+	</body>
+	<script src="/core/starry.js" main='live_list'></script>
+</html>

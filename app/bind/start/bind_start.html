@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="bind_start.less" rel="stylesheet/less"/>
+		<title>关联账号</title>
+	</head>
+	<body hidden="true">
+		
+		<!-- 白色标题栏 -->
+		<div class="title" id="white_title" hidden="true"><div id="back"></div><p id="title">关联账号</p><div id="cross" hidden="true"></div></div>
+		
+		<div id="content">
+			<p   id="first_name"></p>
+			<div id="first_account"><img class="userface" src="/resource/head_none.png"/><p></p></div>
+			<div id="icon"><img src="/resource/arrow_bottom.png"/></div>
+			<p   id="next_name"></p>
+			<div id="next_account"><img class="userface" src="/resource/head_none.png"/><p></p></div>
+			<p   id="end_name" hidden="true"></p>
+			<div id="end_account" hidden="true"><img class="userface" src="/resource/head_none.png"/><p></p></div>
+			
+			<p   id="info"></p>
+			<div id="button">关联账号</div>
+		</div>
+		
+		<!-- 退出登录 -->
+		<div id="logout" class="logout" hidden="true">
+			<div id="panel">
+				<p id="info">确认退出登录？</p>
+				<div id="buttons"><p id="enter">确定</p><p id="esc">取消</p></div>
+			</div>
+		</div>
+		
+		<!-- 提示 -->
+		<p class="tip" id="simple_tip" hidden="true"></p>
+	
+	</body>
+	<script src="/core/outside/less.js"></script>
+	<script src="/core/outside/require.js" main='bind_start'></script>
+</html>

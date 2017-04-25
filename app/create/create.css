@@ -1,0 +1,218 @@
+/**
+ * 导入通用类
+ */
+@import url("/module/style.css");
+
+
+/**
+ * 标题栏
+ */
+#titlebar
+{
+	width: 640px;
+	height: 80px;
+	background-color: #FFF;
+	border-bottom: 1px solid #E9E9E9;
+}
+
+#titlebar #back
+{
+	width: 80px;
+	height: 80px;
+	background-image: url(/resource/back_black.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 12px 16px;
+    float: left;
+}
+
+#titlebar #back:hover
+{
+	-webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}
+
+#titlebar #title
+{
+	float: left;
+	width: 480px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 32px;
+}
+
+
+/**
+ * 账户1
+ */
+#account_one,#account_two
+{
+	width: 640px;
+	height: 200px;
+	margin-top: 20px;
+}
+
+#account_one
+{
+	margin-top: 50px;
+}
+
+#account_one #type,#account_two #type
+{
+	width: 640px;
+	height: 80px;
+	
+	line-height: 80px;
+	font-size: 28px;
+	text-align: center;
+	color: #888;
+}
+
+#account_one #user,#account_two #user
+{
+	width: 560px;
+	height: 70px;
+	margin-left: 40px;
+	
+	border: 1px solid #EEE;
+	border-radius: 80px;
+	text-align: center;
+	
+}
+
+#account_one #user #icon,#account_two #user #icon
+{
+	float: left;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin: 5px 0 0 6px;
+	
+	background-color: #999;
+}
+
+#account_one #user #username,#account_two #user #username
+{
+	float: left;
+	height: 70px;
+	padding-left: 30px;
+	line-height: 70px;
+	
+	font-size: 32px;
+}
+
+
+/**
+ * 箭头
+ */
+#arrow
+{
+	width: 60px;
+	height: 60px;
+	margin-left: 290px;
+}
+
+/**
+ * 提交按钮
+ */
+#submit
+{
+	position: absolute;
+	width: 640px;
+	height: 106px;
+	
+	background-image: url(/resource/button_radius.png);
+	background-repeat: no-repeat;
+	background-size: 640px 106px;
+	
+	text-align: center;
+	line-height: 106px;
+	color: #FFF;
+	font-size: 30px;
+}
+
+
+/**
+ * 提示
+ */
+#tip
+{
+	width: 100%;
+	height: 101%;
+	background-color: rgba(0,0,0,0.5);
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#tip #panel
+{
+	width: 560px;
+	height: 350px;
+	border-radius: 10px;
+	background-color: #FFF;
+	margin: 0 auto;
+}
+
+#tip #panel #type
+{
+	width: 560px;
+	height: 100px;
+	
+	line-height: 100px;
+	font-size: 28px;
+	text-align: center;
+	color: #888;
+}
+
+#tip #panel #user
+{
+	width: 500px;
+	height: 70px;
+	margin-left: 30px;
+	border: 1px solid #EEE;
+	border-radius: 80px;
+	text-align: center;
+	
+}
+
+#tip #panel #icon
+{
+	float: left;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin: 5px 0 0 6px;
+	
+	background-color: #999;
+}
+
+#tip #panel #username
+{
+	float: left;
+	height: 70px;
+	padding-left: 30px;
+	line-height: 70px;
+	
+	font-size: 32px;
+}
+
+#tip #panel #info
+{
+	width: 500px;
+	margin: 25px 0 30px 30px;
+	color: #666;
+	text-align: center;
+}
+
+#tip #panel #enter
+{
+	width: 560px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	border-top: 1px solid #eee;
+	font-size: 30px;
+}

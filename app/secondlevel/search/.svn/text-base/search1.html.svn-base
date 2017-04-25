@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="/module/style.css" rel="stylesheet"/>
+		<title>搜索课程</title>
+	</head>
+
+
+	<body >
+	<!--搜索框栏目-->	
+    <div id="bar_select_search" hidden="true">
+    <span id="back"></span>
+	<div id="container"><span id="type" style="display:none;">课程</span><i style="display:none;"></i><input style="width: 100%;" id="searchKey" type="text"></div><span id="search_btn">搜索</span></div>		
+	<div style="display:none;" id="drop_down_list"><ul><li id="class">班级</li><li id="course">课程</li></ul></div>
+	<style type="text/css">
+#bar_select_search 
+{
+width: 640px;
+height: 88px;
+background-color: #5baef5;
+position: fixed;
+top: 0;
+left: 0;
+}
+#bar_select_search #back {
+float: left;
+width: 80px;
+height: 80px;
+background-image: url(/resource/back.png);
+background-repeat: no-repeat;
+background-size: 50px 50px;
+background-position: 12px 16px;
+}
+#bar_select_search #back:hover
+{
+-webkit-filter:brightness(90%);
+        filter:brightness(90%);
+}
+#bar_select_search #container {
+display: block;
+width: 440px;
+height: 68px;
+margin: 10px 0;
+background-color: #FFF;
+float: left;
+}
+#bar_select_search #container #type {
+display: inline-block;
+width: 80px;
+height: 68px;
+line-height: 68px;
+text-align: center;
+float: left;
+}
+#bar_select_search #container i {
+display: inline-block;
+width: 20px;
+height: 68px;
+background: url(/resource/arrow_solid.png) no-repeat 0 center;
+background-size: 18px 9px;
+float: left;
+}
+#bar_select_search #container #searchKey {
+width: 320px;
+height: 100%;
+border: 0;
+margin-left: 20px;
+-webkit-appearance: none;
+outline: 0;
+}
+#bar_select_search #search_btn {
+display: block;
+width: 100px;
+height: 100%;
+color: #FFF;
+line-height: 88px;
+text-align: center;
+float: right;
+}
+#drop_down_list {
+    width: 292px;
+    overflow: hidden;
+    clear: both;
+    box-shadow: 1px 1px 5px #494e51;
+    position: absolute;
+    top: 78px;
+    left: 100px;
+    z-index: 99999;
+}
+#drop_down_list ul {
+    width: 100%;
+    height: auto;
+}
+#drop_down_list ul #class {
+    background-image: url(/resource/classroom.png);
+}
+#drop_down_list ul #course {
+    border-top: 1px solid #33373a;
+    background-image: url(/resource/book_white.png);
+}
+#drop_down_list ul li {
+    height: 90px;
+    width: 100%;
+    float: left;
+    background-color: #494e51;
+    background-size: 54px 41px;
+    background-repeat: no-repeat;
+    background-position: 28px center;
+    line-height: 90px;
+    text-align: left;
+    text-indent: 100px;
+    color: #FFF;
+}
+li {
+    list-style: none;
+}			
+</style>
+
+<div style="width: 640px; margin-top: 88px;" id="wrapper"></div>	
+<!--搜索课程结果-->
+<div id="item_course_full" hidden="true">
+	<div id="logo"><img src="http://test.gkk.cn/Public/files/course/course-default1.jpg?5.1.4"></div>
+	<div id="container">
+	<p id="title">花钱测试</p><span id="price" class="red">￥0</span><span id="hour">0课时</span></div>
+</div>
+
+
+<style type="text/css">
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #F0F2F6;
+}
+	#item_course_full {
+    width: 640px;
+    height: 160px;
+    border-bottom: 1px solid #e9e9e9;
+    background-color: #FFF;
+    float: left;
+}
+	/*#item_course_full:hover {
+-webkit-filter:brightness(90%);
+        filter:brightness(90%);
+
+}*/
+
+#item_course_full #logo {
+    width: 230px;
+    padding: 15px;
+    float: left;
+    overflow: hidden;
+}
+#item_course_full #logo img {
+    width: 230px;
+    height: 130px;
+}
+#item_course_full #container {
+    width: 350px;
+    height: 130px;
+    margin: 15;
+    float: left;
+}
+#item_course_full #container #title {
+    width: 360px;
+    height: 70px;
+    line-height: 35px;
+    margin-top: 8px;
+}
+#item_course_full #container #price {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 14px;
+    font-size: 20px;
+    float: left;
+}
+#item_course_full #container .red {
+    color: #FF7E7E;
+}
+.red {
+    color: red; 
+}
+.green{
+	 color: green;
+}
+#item_course_full #container #hour {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-top: 14px;
+    color: #999;
+    line-height: 40px;
+    font-size: 20px;
+    float: right;
+    background: url(/resource/folder.png) no-repeat 0 center;
+    background-size: 33px 40px;
+    text-indent: 30px;
+}
+/*
+ * 进度条
+ */
+#loding{
+     top: 500px;
+     left: 250px;
+     position: absolute;
+}	
+</style>
+	<!--班级搜索结果-->
+	
+<div id="item_class" hidden="true"><img src="/resource/default_class.png">
+	<div id="info">
+		<p id="title">创建班级测试一</p>
+		<p id="create_name">创建人：老罗</p>
+		<p id="memberNum">2</p>
+	</div>
+</div>
+<style>
+	#item_class {
+    width: 640px;
+    border-bottom: 1px solid #e3e9ee;
+    overflow: hidden;
+    background-color: #FFF;
+}
+#item_class img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px;
+    float: left;
+}
+#item_class #info {
+    width: 480px;
+    height: 120px;
+    line-height: 36px;
+    padding: 20px 0;
+    float: left;
+}
+#item_class #info #title {
+    height: 36px;
+    min-width: 200px;
+}
+#item_class #info #create_name {
+    height: 36px;
+    font-size: 20px;
+    color: #a1a1a1;
+}
+#item_class #info #memberNum {
+    margin-top: 6px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #a1a1a1;
+    border-radius: 15px;
+    background: url(/resource/member.png) no-repeat 10px center;
+    background-size: 25px 23px;
+    padding-right: 10px;
+    text-indent: 43px;
+    font-size: 20px;
+    color: #a1a1a1;
+    display: inline-block;
+}
+
+</style>
+<!--没有搜索记录-->
+
+<div  style="margin-top: 260px;" id="panel_empty"><img src="/resource/empty_search.png"><p>没有搜索记录</p></div>
+<style>
+#panel_empty {
+    width: 640px;
+}
+#panel_empty img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-top: 160px;
+    margin-left: 220px;
+}
+#panel_empty p {
+    margin-top: 20px;
+    color: #a1a1a1;
+    line-height: 32px;
+    text-align: center;
+}
+</style>
+</body>
+<script src="/core/starry5.js" main='src/main'></script>
+</html>

@@ -1,0 +1,1237 @@
+/**
+ * 导入通用类
+ */
+@import url("/module/style.css");
+
+
+body
+{
+	background-color: #F2F3F7;
+	position: fixed;
+	overflow: hidden;
+}
+
+
+
+
+/**
+ * 滚动面板
+ */
+#panel
+{
+	width: 640px;
+}
+
+#panel #content
+{
+	width: 2560px;
+}
+
+#panel #content li
+{
+	display: block;
+	width  : 640px;
+	float  : left;
+}
+
+
+/**
+ * 首页页面///////////////////////////////////////////////
+ */
+#panel #content #home
+{
+	overflow-y: auto;
+}
+
+#slide
+{
+	width: 640px;
+	height: 330px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+#slide #content
+{
+	
+}
+
+#slide #content #photo
+{
+	width: 640px;
+	height: 330px;
+	display: block;
+	float: left;
+}
+#slide #content #photo img
+{
+	width: 640px;
+	height: 330px;
+}
+
+#slide #thumb
+{
+	width: 620px;
+	height: 60px;
+	padding-right: 20px;
+	position: absolute;
+	top: 270px;
+}
+
+#slide #thumb #dot
+{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 30px 5px 0 5px;
+	float: right;
+	background-color: #fff;
+	opacity: 0.5;
+}
+
+
+/**
+ * 我的授课
+ */
+#home #teaching
+{
+	width: 640px;
+	background-color: #FFF;
+	margin-bottom: 15px;
+}
+
+
+#home #teaching #title
+{
+	width: 640px;
+	height: 80px;
+	border-bottom: 1px solid #E9E9E9;
+	
+	background-image: url(/resource/icon_line.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 0px 15px;
+	
+	line-height: 80px;
+	text-indent: 45px;
+}
+
+#home #teaching #title span
+{
+	display: block;
+	text-indent: 0px;
+	padding: 0 20px 0 20px;
+	float: right;
+	background-color: #FFF;
+}
+
+#home #teaching #title span:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+#home #teaching #content
+{
+	width: 640px;
+	background-color: #f9f9f9;
+}
+
+
+/**
+ * 直播课
+ */
+#home #live_list
+{
+	width: 640px;
+	background-color: #FFF;
+	margin-bottom: 15px;
+}
+
+
+#home #live_list #title
+{
+	width: 640px;
+	height: 80px;
+	border-bottom: 1px solid #E9E9E9;
+	
+	background-image: url(/resource/icon_line.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 0px 15px;
+	
+	line-height: 80px;
+	text-indent: 45px;
+}
+
+#home #live_list #title span
+{
+	display: block;
+	text-indent: 0px;
+	padding: 0 20px 0 20px;
+	float: right;
+	background-color: #FFF;
+}
+
+#home #live_list #title span:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+/**
+ * 必修课和选修课
+ */
+#home #off_line_course
+{
+	width: 640px;
+	background-color: #FFF;
+	margin-bottom: 15px;
+}
+
+
+#home #off_line_course #title
+{
+	width: 640px;
+	height: 80px;
+	border-bottom: 1px solid #E9E9E9;
+	
+	background-image: url(/resource/icon_line.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 0px 15px;
+	
+	line-height: 80px;
+	text-indent: 45px;
+}
+
+#home #off_line_course #title span
+{
+	display: block;
+	text-indent: 0px;
+	padding: 0 20px 0 20px;
+	float: right;
+	background-color: #FFF;
+}
+
+#home #off_line_course #title span:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+#home #off_line_course #content
+{
+	width: 640px;
+	background-color: #f9f9f9;
+}
+
+
+/**
+ * 我的自修课
+ */
+#home #pay_course
+{
+	width: 640px;
+	background-color: #FFF;
+	margin-bottom: 15px;
+}
+
+
+#home #pay_course #title
+{
+	width: 640px;
+	height: 80px;
+	border-bottom: 1px solid #E9E9E9;
+	
+	background-image: url(/resource/icon_line.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 0px 15px;
+	
+	line-height: 80px;
+	text-indent: 45px;
+}
+
+#home #pay_course #title span
+{
+	display: block;
+	text-indent: 0px;
+	padding: 0 20px 0 20px;
+	float: right;
+	background-color: #FFF;
+}
+
+#home #pay_course #title span:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+#home #pay_course #content
+{
+	width: 640px;
+	background-color: #f9f9f9;
+}
+
+
+
+/**
+ * 本校精品课
+ */
+#home #quality_course
+{
+	width: 640px;
+	background-color: #FFF;
+	margin-bottom: 15px;
+}
+
+
+#home #quality_course #title
+{
+	width: 640px;
+	height: 80px;
+	border-bottom: 1px solid #E9E9E9;
+	
+	background-image: url(/resource/icon_line.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 0px 15px;
+	
+	line-height: 80px;
+	text-indent: 45px;
+}
+
+#home #quality_course #title span
+{
+	display: block;
+	text-indent: 0px;
+	padding: 0 20px 0 20px;
+	float: right;
+	background-color: #FFF;
+}
+
+#home #quality_course #title span:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+#home #quality_course #content
+{
+	width: 640px;
+	background-color: #FFF;
+}
+
+
+/**
+ * 资源库课程
+ */
+#home #public_course
+{
+	width: 640px;
+	background-color: #FFF;
+	margin-bottom: 15px;
+}
+
+
+#home #public_course #title
+{
+	width: 640px;
+	height: 80px;
+	border-bottom: 1px solid #E9E9E9;
+	
+	background-image: url(/resource/icon_line.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 0px 15px;
+	
+	line-height: 80px;
+	text-indent: 45px;
+}
+
+#home #public_course #title span
+{
+	display: block;
+	text-indent: 0px;
+	padding: 0 20px 0 20px;
+	float: right;
+	background-color: #FFF;
+}
+
+#home #public_course #title span:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+#home #public_course #content
+{
+	width: 640px;
+	background-color: #FFF;
+}
+
+
+/**
+ * 院系页面///////////////////////////////////////////////
+ */
+#panel #content #school
+{
+    overflow-y: auto;
+}
+
+#panel #content #school #search
+{
+	width: 608px;
+	height: 60px;
+	background-color: #FFF;
+	
+	border-radius: 10px;
+	border: 1px solid #E9E9E9;
+	
+	margin: 15px;
+	
+	line-height: 60px;
+	text-align: center;
+	
+	background-image: url(/resource/search_black.png);
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position: 230px 8px;
+}
+
+
+#panel #content #school #search:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+#tree
+{
+	width: 640px;
+}
+
+#tree #tree_title
+{
+	width: 640px;
+	height: 80px;
+	background-color: #FFF;
+	margin-bottom: 1px;
+}
+
+
+#tree #tree_title:hover
+{
+	-webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}
+
+
+#tree #tree_title #tree_icon
+{
+	float: left;
+	width: 70px;
+	height: 80px;
+	background-image: url(/resource/clound.png);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position:15px 16px;
+}
+
+
+#tree #tree_title #tree_txt
+{
+	float: left;
+	width: 500px;
+	height: 80px;
+	line-height: 80px;
+	text-indent: 20px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+#tree #tree_title #tree_arrow
+{
+	float: left;
+	width: 70px;
+	height: 80px;
+	background-image: url(/resource/arrow_right.png);
+	background-size: 55px 55px;
+	background-repeat: no-repeat;
+	background-position:5px 15px ;
+	opacity: 0.8;
+}
+
+
+#trunk
+{
+	width: 640px;
+	background-color: #ECEDF3;
+}
+
+
+#trunk #trunk_title
+{
+	width: 640px;
+	height: 80px;
+	background-color: #F2F3F7;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+/*#trunk #trunk_title:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}*/
+
+#trunk #trunk_title #trunk_icon
+{
+	float: left;
+	width: 70px;
+	height: 80px;
+	background-image: none;
+}
+
+#trunk #trunk_title #trunk_txt
+{
+	float: left;
+	width: 500px;
+	height: 80px;
+	line-height: 80px;
+	text-indent: 20px;
+}
+
+#trunk #trunk_title #trunk_arrow
+{
+	float: left;
+	width: 70px;
+	height: 80px;
+	background-image: url(/resource/add.png);
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position:10px 20px ;
+}
+
+#trunk #trunk_content
+{
+	width: 530px;
+	margin-left: 80px;
+	padding-bottom: 15px;
+}
+
+#trunk #trunk_content #leaves #txt
+{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 6px;
+	padding: 10px;
+	margin: 18px 0 0 18px;
+	background-color: #ECEDF3;
+	border: 1px solid #E0E0E0;
+}
+
+
+#trunk #trunk_content #leaves:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+
+
+/**
+ * 发现页面///////////////////////////////////////////////
+ */
+#panel #content #find
+{
+	overflow-y: auto;
+}
+
+
+#panel #content #find p
+{
+	width: 640px;
+	height: 80px;
+	background-color: #FFF;
+	
+	line-height: 80px;
+	text-indent: 80px;
+	
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: 15px 15px;
+	
+	border-top: 1px solid #F9F9F9;
+}
+
+#panel #content #find p:hover
+{
+	border-top: 1px solid #fff;
+	-webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}
+
+#panel #content #find #hot
+{
+	background-image:url(/resource/book.png);
+	margin-top: 15px;
+}
+
+#panel #content #find #res
+{
+	background-image:url(/resource/res.png);
+}
+
+#panel #content #find #live
+{
+	background-image:url(/resource/live.png);
+}
+
+#panel #content #find #job
+{
+	background-image:url(/resource/book.png);
+	margin-top: 15px;
+}
+
+#panel #content #find #pop
+{
+	background-image:url(/resource/pop.png);
+	margin-top: 15px;
+}
+
+#panel #content #find #news
+{
+	background-image:url(/resource/news.png);
+	margin-top: 15px;
+}
+
+
+
+/**
+ * 我的页面///////////////////////////////////////////////////
+ */
+#panel #content #my
+{
+	overflow-y: auto;
+}
+
+#my #user_info
+{
+	width: 640px;
+	height: 360px;
+	margin-bottom: 15px;
+	background-image: url(/resource/user_bg_none.jpg);
+	background-repeat: no-repeat;
+	background-size: 640px 338px;
+	
+	position: relative;
+}
+
+#my #user_info #head
+{
+	width: 640px;
+	height: 190px;
+	background-image: url(/resource/arc.png);
+	background-repeat: no-repeat;
+	background-size: 640px 190px;
+	margin-top: 170px;
+}
+
+#my #user_info #head img
+{
+	display: block;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	margin: 0 auto;
+	border: 4px solid rgba(255,255,255,0.5);
+}
+
+#my #user_info #head p
+{
+	width: 125px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 55px;
+}
+
+#my #user_info #head img:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+#my #user_info #more_button
+{
+	position: absolute;
+	top: 20px;
+	left: 550px;
+	
+	width: 66px;
+	height: 66px;
+	
+	background-image: url(/resource/more_button.png);
+	background-size: 66px 66px;
+}
+
+#my #user_info #more_button:hover
+{
+	-webkit-filter:brightness(80%);
+            filter:brightness(80%);
+}
+
+
+#my #no_data
+{
+	width: 640px;
+	height: 350px;
+	margin-bottom: 15px;
+	
+	background-color: #FFF;
+	background-image: url(/resource/empty_class.png);
+	background-repeat: no-repeat;
+	background-size: 125px 125px;
+	background-position: 258px 80px;
+	
+	text-align: center;
+	line-height: 480px;
+}
+
+
+#my #course,#my #teaching
+{
+	width: 640px;
+	background-color: #FFF;
+	margin-bottom: 15px;
+}
+
+
+#my #course #title,#my #teaching #title
+{
+	width: 640px;
+	height: 80px;
+	border-bottom: 1px solid #E9E9E9;
+	
+	background-image: url(/resource/icon_line.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 0px 15px;
+	
+	line-height: 80px;
+	text-indent: 45px;
+}
+
+#my #course #title span,#my #teaching #title span
+{
+	margin-left: 390px;	
+	padding: 10px;
+	background-color: #FFF;
+}
+
+#my #course #title span:hover,#my #teaching #title span:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+#my #course #content,#my #teaching #content
+{
+	width: 640px;
+	background-color: #f9f9f9;
+}
+
+
+
+
+
+/**
+ * 简单提示//////////////////////////////////////////////////
+ */
+#tip
+{
+	position:absolute;
+}
+
+#tip p
+{
+	padding:15px;
+	border-radius:6px;
+	background-color: #333;
+	color:#FFF;
+}
+
+
+
+/**
+ * 标题栏///////////////////////////////////////////////////
+ */
+#titlebar
+{
+	width: 640px;
+	height: 80px;
+	background-color: #FFF;
+	
+	position:  absolute;
+	top: 0;
+}
+
+#titlebar #back
+{
+	width: 80px;
+	height: 80px;
+	background-color: #5BAEF5;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 12px 16px;
+    float: left;
+}
+#titlebar #back:hover
+{
+	-webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}
+
+#titlebar #title
+{
+	float: left;
+	width: 480px;
+	height: 80px;
+	background-color: #5BAEF5;
+	
+	text-align: center;
+	line-height: 80px;
+	color: #FFF;
+	font-size: 32px;
+}
+
+
+#titlebar #search
+{
+	width: 80px;
+	height: 80px;
+	background-color: #5BAEF5;
+	background-image: url(/resource/search.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 12px 16px;
+    float: left;
+}
+
+#titlebar #search:hover
+{
+	-webkit-filter:brightness(90%);
+            filter:brightness(90%);
+}
+
+
+
+/**
+ * 主菜单 ////////////////////////////////////////////////////
+ */
+#menu
+{
+    width:640px;
+    height:98px;
+    background-color:#FFFFFF ;
+    border-top:1px solid #F6F6F6;
+    position: absolute;
+    bottom: 0;
+}
+
+#menu li
+{
+    display: block;
+    width: 160px;
+    height:98px;
+    
+    text-align: center;
+    line-height: 150px;
+    user-select: none;
+    
+    font-size: 20px;
+    background-size: 640px 200px;
+    background-image: url(/resource/menu.png);
+    
+    float  : left;
+}
+
+#menu #home
+{
+    background-position: 0 0
+}
+
+#menu #school
+{
+    background-position: 480px 0
+}
+
+#menu #find
+{
+    background-position: 320px 0
+}
+
+#menu #my
+{
+    background-position: 160px 0
+}
+
+
+
+/**
+ * 列表课程项
+ */
+#item
+{
+	float: left;
+	width: 640px;
+	height: 180px;
+	background-color: #FFF;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+#item:hover
+{
+	border-bottom: 1px solid #FFF;
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+#item #photo
+{
+	float: left;
+	width: 236px;
+	height: 132px;
+	margin: 24px 14px 24px 14px;
+}
+
+#item #item_content
+{
+	float: left;
+	width: 360px;
+	height: 132px;
+	margin-top: 24px;
+}
+
+#item #item_content #item_title
+{
+	height: 77px;
+	line-height: 38px;
+	margin-top: 5px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#item #item_content #sub
+{
+	height: 50px;
+	line-height: 50px;
+}
+
+#item #item_content #sub #sub_title
+{
+	float: left;
+	width: 180px;
+	font-size: 22px;
+	color: #666;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#item #item_content #sub #hour
+{
+	float: right;
+	padding-left: 40px;
+	background-image: url(/resource/folder.png);
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-position-y: 5px;
+	font-size: 22px;
+	color: #666;
+}
+
+
+/**
+ * 直播课程列表项
+ */
+#live_item
+{
+	float: left;
+	width: 640px;
+	height: 180px;
+	background-color: #FFF;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+#live_item:hover
+{
+	border-bottom: 1px solid #FFF;
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+#live_photo
+{
+	float: left;
+	width: 236px;
+	height: 132px;
+	margin: 24px 14px 24px 14px;
+}
+
+#live_item_content
+{
+	float: left;
+	width: 360px;
+	height: 132px;
+	margin-top: 24px;
+}
+
+#live_item_title
+{
+	height: 77px;
+	line-height: 38px;
+	margin-top: 5px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#live_sub
+{
+	height: 50px;
+	line-height: 50px;
+}
+
+#live_sub_title
+{
+	color: #FFF;
+	background-color: green;
+	text-align: center;
+	font-size: 22px;
+	height: 50px;
+	line-height: 50px;
+}
+
+#live_sub_title
+{
+	float: right;
+	width: 150px;
+	font-size: 22px;
+	color: #fff;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#live_people
+{
+	float: left;
+	padding-left: 40px;
+	background-image: url(/resource/member.png);
+	background-repeat: no-repeat;
+	background-size: 36px 36px;
+	background-position-y: 5px;
+	font-size: 22px;
+	color: #666;
+}
+
+
+/**
+ * 资源库列表项
+ */
+#item_course_library
+{
+    
+    width: 296px;
+    /*height: 300px;*/
+    margin-top: 20px;
+    background-color: #FFF;
+    margin-left: 15px;
+    float: left;
+}
+
+#item_course_library:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+#item_course_library img
+{
+    width: 296px;
+    overflow: hidden;        
+}
+
+#item_course_library #item_title
+{        
+    height: 34px;
+    margin-top: 10px;
+    line-height: 34px;
+    text-indent: 10px;        
+    font-size: 26px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+#item_course_library #item_school 
+{
+    width: 100%;
+    height: 45px;
+    background-image: url(/resource/school.png);
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    font-size: 20px;        
+    line-height: 45px;
+    text-indent: 38px;   
+    color: #999;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#item_course_library #item_price
+{        
+	display: none;    
+    font-size: 20px;        
+    line-height: 32px;
+    text-indent: 10px;
+    color: red;
+} 
+
+
+/**
+ * 本校课程列表项
+ */
+
+#item_course
+{
+    width: 297px;
+    height: 280px;
+    background-color: #FFF;
+    margin-left: 15px;
+    float: left;
+    margin-top: 20px;
+}
+
+#item_course:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+#item_course img
+{
+    width: 297px;
+    overflow: hidden;        
+}
+
+#item_course #item_title
+{        
+    width: 286px;
+    height: 60px;
+    line-height: 60px;
+    text-indent: 10px;        
+    font-size: 26px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+#item_course #item_content 
+{
+    width: 100%;
+    height: 40px;
+    
+    line-height: 30px;
+    text-indent: 44px;
+    background-image: url(/resource/folder.png);
+    background-size: 33px 40px;
+    background-repeat: no-repeat;
+    background-position: 8px -5px;
+    position: relative;
+}
+
+#item_course #item_content #hour
+{
+    color: #999;
+    font-size: 20px;
+    text-indent: 44px;
+}
+   
+#item_course #item_content #price
+{         
+	
+	float: right;   
+    border-bottom: 20px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+/*广告样式*/
+#download{
+	width: 640px;
+	height:90px;
+	background-image: url(/resource/download.png);
+}
+#download #logo_img{
+	width:70px;
+	height:70px;
+	border-radius: 8px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-right: 20px;
+	border:0px;
+	background-image: url(/resource/clound.png);
+	}
+#download span{
+	float: left;
+	line-height: 90px;
+	color: #FFFFFF;
+	font-size: 30px;
+	vertical-align: middle;
+}
+#download a{
+	float: right;
+	line-height: 50px;
+	margin: 20px 0 0 20px;
+	color: #FFFFFF;
+	font-size: 26px;
+	border-radius: 8px;
+	vertical-align: middle;
+	text-align: center;
+	width: 144px;
+	height: 50px;
+	border: solid 2px #FFFFFF;
+	text-decoration: none;
+}
+#download #download_img{
+	float: right;
+	width: 90px;
+	height: 112px;
+	background-image:url(/resource/close.png);
+	background-size: 30px 30px;
+    background-position: 30px 30px;
+    background-repeat: no-repeat;
+}

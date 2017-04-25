@@ -1,0 +1,130 @@
+/**
+ * 导入通用类
+ */
+@import url("/module/style.css");
+
+
+body
+{
+	background-color: #F2F3F7;
+}
+
+/**
+ * 直播课
+ */
+#live_list_ready,#live_list_start
+{
+	width: 640px;
+	background-color: #FFF;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+
+#live_list_ready #title,#live_list_start #title
+{
+	width: 640px;
+	height: 80px;
+	border-bottom: 1px solid #E9E9E9;
+	
+	background-image: url(/resource/icon_line.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 0px 15px;
+	
+	line-height: 80px;
+	text-indent: 45px;
+}
+
+#live_list_ready #title span,#live_list_start #title span
+{
+	display: block;
+	text-indent: 0px;
+	padding: 0 20px 0 20px;
+	float: right;
+	background-color: #FFF;
+}
+
+#live_list_ready #title span:hover,#live_list_start #title span:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+
+/**
+ * 直播列表项 
+ */
+#live_item
+{
+    width: 297px;
+    height: 280px;
+    background-color: #FFF;
+    margin-left: 15px;
+    float: left;
+    margin-top: 20px;
+}
+
+#live_item:hover
+{
+	-webkit-filter:brightness(95%);
+            filter:brightness(95%);
+}
+
+#live_item_photo
+{
+    width: 297px;
+    overflow: hidden;        
+}
+
+#live_item_title
+{        
+    width: 286px;
+    height: 60px;
+    line-height: 60px;
+    text-indent: 10px;        
+    font-size: 26px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+#live_item_content
+{
+    width: 100%;
+    height: 40px;
+    
+    line-height: 30px;
+    text-indent: 44px;
+    background-image: url(/resource/member.png);
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-position: 8px 2px;
+    position: relative;
+}
+
+#live_people
+{
+    color: #999;
+    font-size: 20px;
+    text-indent: 80px;
+    line-height: 45px;
+}
+   
+#live_status
+{         
+	float: right;   
+    padding: 5px 10px 5px 10px;
+    text-indent: 0px;
+    font-size: 20px;
+    background-color: green;
+    color: #FFFFFF;
+}
+
+#nolive
+{
+	width: 100%;
+	height: 100%;
+	line-height: 100%;
+	text-align: center;
+}

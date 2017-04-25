@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640, user-scalable=no" />
+		<link href="bind_end.less" rel="stylesheet/less"/>
+		<title>解除关联</title>
+	</head>
+	<body hidden="true">
+		
+		<!-- 白色标题栏 -->
+		<div class="title" id="white_title" hidden="true"><div id="back"></div><p id="title">关联账号</p><div id="cross" hidden="true"></div></div>
+		
+		<div id="content">
+			<p   id="first_name"></p>
+			<div id="first_account"><img src="/resource/head_none.png"/><p></p></div>
+			
+			<div id="icon"><img src="/resource/nobind.png"/></div>
+			
+			<p   id="next_name"></p>
+			<div id="next_account"><img src="/resource/head_none.png"/><p></p></div>
+			
+			<p   id="info">该 【云联盟】 账号，已与你的其他【河软高校云】账号关联，你可解除关联再与此账号关联。</p>
+			<div id="button">解除关联</div>
+		</div>
+		
+		<!-- 提示 -->
+		<p class="simple_tip" id="simple_tip" hidden="true"></p>
+		
+		<!-- 解绑弹框 -->
+		<div id="unbind_tip" class="unbind_tip" hidden="true">
+			<div id="panel">
+				<p id="first_name"></p>
+				<div id="first_account"><img src="/resource/head_none.png"/><p></p></div>
+				<div id="icon"><img src="/resource/unbind.png"/></div>
+				<p id="next_name"></p>
+				<div id="next_account"><img src="/resource/head_none.png"/><p></p></div>
+				<div id="code"><input type="text" value="请输入验证码"></input><p id="code_btn">获取验证码</p></div>
+				<div id="buttons"><p id="esc">取消</p><p id="enter">解除关联</p></div>
+			</div>
+		</div>
+		
+		<!-- 退出登录 -->
+		<div id="logout" class="logout" hidden="true">
+			<div id="panel">
+				<p id="info">确认退出登录？</p>
+				<div id="buttons"><p id="enter">确定</p><p id="esc">取消</p></div>
+			</div>
+		</div>
+		
+	</body>
+	<script src="/core/outside/less.js"></script>
+	<script src="/core/outside/require.js" main='bind_end'></script>
+</html>
